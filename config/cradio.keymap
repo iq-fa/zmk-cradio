@@ -16,10 +16,10 @@
 };
 
 
-/ { 
+/ {
     combos {
         compatible = "zmk,combos";
-        combo_esc { 
+        combo_esc {
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp ESC>;
@@ -198,7 +198,7 @@
 
         keymap {
                 compatible = "zmk,keymap";
-                
+
        		default_layer {
 		bindings = <
 		&kp TAB &kp C &kp L &kp M &trans 						&trans &kp F  &kp U    &kp Z  &kp BKSP
@@ -213,7 +213,7 @@
 		&trans  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &trans		&trans &kp LS(COMMA) &kp LS(DOT) &kp CARET &trans
 		&kp TAB    &hm LCTL EQUAL    &hm LALT LA(RBKT)      &hm LGUI LA(LS(RBKT))     &trans 		&trans &hm RGUI LBRC  &hm RALT RBRC &hm RCTL PIPE  &kp AMPS
   		&hs LSHIFT TILDE    &kp GRAVE 	&kp LA(LBKT) &kp LA(LS(LBKT))  &to 0 	&to 2 &kp LPRN &kp RPRN &kp RBKT  &kp RSHIFT
-					    &to 0 &trans  					&trans &to 2 
+					    &to 0 &trans  					&trans &to 2
 		>;
 		};
 
@@ -228,20 +228,20 @@
 
 		tri_layer {
 		bindings = <
-		&trans  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &trans &trans    &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(LBKT) &trans
+		&trans  &msc SCRL_LEFT    &mmv MOVE_UP    &msc SCRL_RIGHT    &trans &trans    &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(LBKT) &trans
 		&kp TAB &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  						&trans &kp DOWN  &hm RALT UP &hm RCTL RIGHT &kp LG(RBKT)
-		&kp LSHIFT &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &to 0   				&kp RGUI &td HOME PG_DN  &td END PG_UP  &trans &kp RSHIFT  
-					 &to 0 &trans &trans &kp RGUI 
+		&kp LSHIFT &mkp RCLK  &msc SCRL_UP &msc SCRL_DOWN &to 0   				&kp RGUI &td HOME PG_DN  &td END PG_UP  &trans &kp RSHIFT
+					 &to 0 &trans &trans &kp RGUI
 		>;
 		};
 		bt {
 		bindings = <
-		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-		&bootloader  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-		&bt BT_PRV  &bt BT_NXT &bt BT_CLR &trans &to 0   				&to 1 &trans  &trans  &trans &trans   
-					 &to 0 &trans  					&trans &to 1 
+		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans
+		&bootloader  &trans &trans &trans &trans &trans &trans &trans &trans &trans
+		&bt BT_PRV  &bt BT_NXT &bt BT_CLR &trans &to 0   				&to 1 &trans  &trans  &trans &trans
+					 &to 0 &trans  					&trans &to 1
 		>;
 		};
-        
+
 	};
 };
